@@ -444,7 +444,7 @@ Logger::operator<< ( const QMap<int, QList<int> >& amap )
 
 
 Logger&
-Logger::operator<< ( double d )
+Logger::operator<< ( const double& d )
 {
 #ifdef Q_OS_ANDROID
     QString s = "%1.%2";
